@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Gate::define('viewApiDocs', function (User $user) {
-    return in_array($user->email, ['admin@app.com']);
+Gate::any('viewApiDocs', function () {
+    return true;
 });
 
 Route::get('/', function () {
