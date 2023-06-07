@@ -43,7 +43,7 @@ return [
      */
     'servers' => [
         'Local' => 'api',
-        'Prod' => 'https://getmentor-original.onrender.com/api',
+        'Prod' => 'https://aslan-getmentor-dev.onrender.com/api',
     ],
 
     'middleware' => [
