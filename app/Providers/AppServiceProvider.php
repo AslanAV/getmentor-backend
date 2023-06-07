@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\UrlGenerator;
 
@@ -23,5 +24,6 @@ class AppServiceProvider extends ServiceProvider
         if (env('APP_ENV') === 'production') {
             $url->forceScheme('https');
         }
+        Gate::define('viewApiDocs', fn() => true);
     }
 }

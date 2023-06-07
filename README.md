@@ -9,6 +9,9 @@ API on Laravel
 
 DEMO: https://getmentor-original.onrender.com/
 
+API DOC: https://getmentor-original.onrender.com/docs/api/
+
+
 ## Requirements:
 
 
